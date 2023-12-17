@@ -1,0 +1,141 @@
+.container{
+  position: sticky;
+    grid-area: leftside;
+    margin-top: 60px;
+}
+.ArtCard{
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  /*background-color: rgb(122 162 179);*/
+  background-color: whitesmoke;
+  border-radius: 5px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  
+}
+.ArtCard:hover{
+  box-shadow: rgb(30, 0, 255) 3px 3px 5px;
+}
+.UserInfo{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px 12px 16px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.CardBackground{
+  background: url("/images/card-bg.svg");
+  background-position: center;
+  background-size: 462px;
+  height: 54px;
+  margin: -12px -12px 0;
+}
+.Name{
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+.About{
+  margin-top: -10px;
+  font-size: 16px;
+  line-height: 1.33;
+  font-weight: 400;
+}
+.Item{
+    border-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 12px;
+  font-size: 12px;
+  display: block;
+  span {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+    svg {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+.Widget{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &>a {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 12px;
+
+        a:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        span {
+            font-size: 12px;
+            line-height: 1.333;
+            &:first-child {
+            color: rgba(0, 0, 0, 0.6);
+            }
+            &:nth-child(2) {
+            color: rgba(0, 0, 0, 1);
+            }
+        }
+        }
+    }
+}
+.CommunityCard{
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+    /*background-color:rgb(122 162 179);*/
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: box-shadow 83ms;
+    position: relative;
+    border: none;
+    padding: 8px 0 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    a {
+      color: black;
+      padding: 4px 12px 4px 12px;
+      font-size: 12px;
+  
+      &:hover {
+        color: #0a66c2;
+      }
+  
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      &:last-child {
+        color: rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+  
+        border-top: 1px solid #d6cec2;
+        padding: 12px;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+}
+.CommunityCard:hover{
+  box-shadow: rgb(30, 0, 255) 3px 3px 5px;
+}
